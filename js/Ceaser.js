@@ -14,13 +14,14 @@ function eraseText() {
 // Button which copies value of textarea
 elCaesarForm.addEventListener("submit", (e) => {
   e.preventDefault()
-  copyInputField(e.target.querySelector('.input-text').value)
+  copyInputField(e.target.querySelector('.result-text').value)
 }) 
 
-const btn= document.querySelector(".paragraph1").addEventListener('click', (e) => {
+const btn = document.querySelector(".paragraph1").addEventListener('click', (e) => {
   const textToCopy = document.querySelector(`[data-copy ="${e.target.id}"]`);
   copyParagraphText(textToCopy.innerText);
 })
+
 const copyInputField = (fieldToBeCopied) => {
   navigator.clipboard.writeText(fieldToBeCopied);
 }
@@ -28,13 +29,11 @@ const copyParagraphText = (textTobeCopied) => {
   navigator.clipboard.writeText(textTobeCopied)
 }
 
-
-
-//ROT-SELECT function
-
+//ROT-select function
 
 function caser (str, amount) {
-  // amount = 26 - amount;
+  
+  // amount = 26 - amount use this code to make it work backwards;
   var result = "";
   for (var j = 0; j < str.length; j++) {
     var eachLetter = str[j];
@@ -55,7 +54,7 @@ function caser (str, amount) {
   elCaesarOutput.value = result;
 };
 
-// inputni submitga aylantir
+// change input to submit in backward code
 elCaesarForm.addEventListener('input', evt => {
   evt.preventDefault();
   let userInput = elCaesarInput.value;
