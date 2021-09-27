@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Caesars Cipher</title>
+  <link rel="stylesheet" href="css/bootstrap5.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="">
+
+  <header>
+    <div class="text-center pt-2 bg-green">
+      <h2 class="h2">Welcome to Caesars Cipher</h2>
+    </div>
+
+  </header>
+
+  <section class="col">
+    <div class="container-lg text-center">
+      <form class="form d-flex flex-wrap justify-content-around mt-5" action="https://echo.htmlacademy.ru" method="POST">
+        <div class="">
+          <h3 class="">Enter text </h3>
+
+          <div>
+            <textarea class="input-text" name="ceaser" id="caser-input" cols="50" rows="10" style="resize: none;"
+              aria-label="Input from latino to Ceaser Cipher"></textarea>
+            <div class="d-flex justify-content-end ">
+              <button class="btn btn--form text-white me-3">Copy</button>
+              <input class="btn btn--form bg-danger text-white" type="button" value="Clear"
+                onclick="javascript:eraseText();">
+            </div>
+
+          </div>
+        </div>
+
+        <div class="rot-section">
+          <select id="rot-select">
+            <option value="1">ROT1</option>
+            <option value="2">ROT2</option>
+            <option value="3">ROT3</option>
+            <option value="4">ROT4</option>
+            <option value="5">ROT5</option>
+            <option value="6">ROT6</option>
+            <option value="7">ROT7</option>
+            <option value="8">ROT8</option>
+            <option value="9">ROT9</option>
+            <option value="10">ROT10</option>
+            <option value="11">ROT11</option>
+            <option value="12">ROT12</option>
+            <option value="13" selected="">ROT13</option>
+            <option value="14">ROT14</option>
+            <option value="15">ROT15</option>
+            <option value="16">ROT16</option>
+            <option value="17">ROT17</option>
+            <option value="18">ROT18</option>
+            <option value="19">ROT19</option>
+            <option value="20">ROT20</option>
+            <option value="21">ROT21</option>
+            <option value="22">ROT22</option>
+            <option value="23">ROT23</option>
+            <option value="24">ROT24</option>
+            <option value="25">ROT25</option>
+          </select>
+
+        </div>
+
+        <div class="result ">
+          <h3 class="">Result </h3>
+          <!-- <p data-copy="paragraph1">Copy me, I dare you</p>
+            <button id="paragraph1" class="btn btn--form">copy</button> -->
+
+          <textarea class="result-text clear" name="ceaser" id="result-input" cols="50" rows="10" readonly
+            style="resize: none;"></textarea>
+          <div class="d-flex justify-content-end ">
+            <button class="paragraph1 btn btn--form text-white ">Copy</button>
+            
+          </div>
+        </div>
+    </div>
+
+    </div>
+  </section>
+
+  <script src="js/bootstrap5.bundle.min.js"></script>
+  <script src="js/normalized-movies.js"></script>
+  <script src="js/ceaser.js"></script>
+</body>
+
+</html>

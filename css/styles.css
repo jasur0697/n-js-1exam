@@ -1,0 +1,46 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+body {
+  color:rgba(106, 47, 202, 0.808);
+  background-color: rgb(180, 196, 221);
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+textarea {
+  background-color: rgb(12, 36, 68);
+  color:white;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.btn--form {
+  background:rgb(96, 110, 173);
+}
+
+.result{
+  position: relative;
+  z-index:1;
+}
+
+.copy-text-buttton {
+  position: absolute;
+  z-index: 2;
+  top: 45px;
+  right: 5px;
+  background-image: url("/img/clone-regular.svg");
+  background-size: cover;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+  border: none;
+}
