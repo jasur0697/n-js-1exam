@@ -29,23 +29,18 @@ textarea {
 }
 
 .btn--form {
-  background:rgb(96, 110, 173);
+  background:#606ead;
 }
 
-.result{
+.red {
+  width: 20px;
+  height: 35px;
+}
+
+
+
+.result-text {
   position: relative;
   z-index:1;
 }
 
-.copy-text-buttton {
-  position: absolute;
-  z-index: 2;
-  top: 45px;
-  right: 5px;
-  background-image: url("/img/clone-regular.svg");
-  background-size: cover;
-  background-position: center;
-  width: 20px;
-  height: 20px;
-  border: none;
-}
