@@ -23,14 +23,15 @@
 
   </header>
 
-  <section class="col">
-    <div class="container-lg text-center">
-      <form class="form d-flex flex-wrap justify-content-around mt-5" action="https://echo.htmlacademy.ru" method="POST">
-        <div class="">
-          <h3 class="">Enter text </h3>
+  <section >
+    <div class="container-xl text-center">
+      <form class="form d-flex flex-wrap justify-content-center mt-5 " action="https://echo.htmlacademy.ru" method="POST">
+        <div class="row align-items-center justify-content-center">
+        <div class="col-sm-10 col-md-8 col-lg-5 ">
+          <h3 >Enter text </h3>
 
           <div>
-            <textarea class="input-text" name="ceaser" id="caser-input" cols="50" rows="10" style="resize: none;"
+            <textarea class="input-text w-100" name="ceaser" id="caser-input" cols="40" rows="10" style="resize: none;"
               aria-label="Input from latino to Ceaser Cipher"></textarea>
             <div class="d-flex justify-content-end ">
  
@@ -41,7 +42,7 @@
           </div>
         </div>
 
-        <div class="rot-section">
+        <div class="col-sm-10  col-md-8 col-lg-2 rot-section mb-4">
           <select id="rot-select">
             <option value="1">ROT1</option>
             <option value="2">ROT2</option>
@@ -72,19 +73,24 @@
 
         </div>
 
-        <div class="result ">
+        <div class="col-sm-10  col-md-8 col-lg-5 ">
+          <div class="result ">
           <h3 class="">Result </h3>
           <!-- <p data-copy="paragraph1">Copy me, I dare you</p>
             <button id="paragraph1" class="btn btn--form">copy</button> -->
 
-          <textarea class="result-text clear" data-copy="paragraph1 name="ceaser" id="result-input" cols="50" rows="10" readonly
+          <textarea class="result-text clear w-100" data-copy="paragraph1" name="ceaser" id="result-input" cols="40" rows="10" readonly
             style="resize: none;"></textarea>
           <div class="d-flex justify-content-end ">
-            <button class="paragraph1 btn btn--form text-white ">Copy</button>
+            <button class="paragraph1 btn btn--form text-white ">
+              <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="clone" class="svg-inline--fa fa-clone fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="white" d="M464 0H144c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h320c26.51 0 48-21.49 48-48v-48h48c26.51 0 48-21.49 48-48V48c0-26.51-21.49-48-48-48zM362 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h42v224c0 26.51 21.49 48 48 48h224v42a6 6 0 0 1-6 6zm96-96H150a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h308a6 6 0 0 1 6 6v308a6 6 0 0 1-6 6z"></path></svg>
+            </button>
             
           </div>
         </div>
-    </div>
+
+        </div>
+      </form>
 
     </div>
   </section>
